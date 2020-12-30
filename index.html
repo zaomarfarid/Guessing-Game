@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="title">Number guessing game</h1>
+    <div class="container mt-5 text-center">
+        <h1 class="text-white bg-danger bg-gradient">Number guessing game</h1>
         <p class="details">Try and guess a random number between 1 and 100.</p>
         <p class="rules">You have 10 attempts to guess the right number</p>
-        <form action="">
-            <h2>Guess a number</h2>
-            <input type="text">
-            <button type="submit">Submit guess</button>
-            <p class="guesses">Previous Guesses: </p>
-            <p class="remaining">Guesses Remaining: 10</p>
+        <form class="bg-info bg-gradient pb-5" action="">
+            <h2 class="text-white p-2 di display-5">Guess a number</h2>
+            <input class="px-5 py-2 m-2" type="text">
+            <button class="d-block mx-auto m-3 px-5 btn btn-warning rounded-pill" type="submit">Submit guess</button>
+            <p class="text-white">Previous Guesses: <span id="guesses"></span></p>
+            <p class="text-white">Guesses Remaining: <span id="remaining">10</span></p>
         </form>
     </div>
 </body>
