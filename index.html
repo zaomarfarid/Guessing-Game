@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Number guessing game</h1>
-        <p>Try and guess a random number between 1 and 100.</p>
-        <p>You have 10 attempts to guess the right number</p>
-        <form action="">
-            <h2>Guess a number</h2>
-            <input type="text">
-            <button type="submit">Submit guess</button>
-            <p id="guesses">Previous Guesses: </p>
-            <p id="remaining">Guesses Remaining: 10</p>
-        </form>
+    <div class="container mt-5 text-center">
+        <h1 class="text-white bg-danger bg-gradient">Number guessing game</h1>
+        <p class="details">Try and guess a random number between 1 and 100.</p>
+        <p class="rules">You have 10 attempts to guess the right number</p>
+        <div class="bg-info bg-gradient pb-5">
+            <h2 class="text-white p-2 di display-5">Guess a number</h2>
+            <input class="px-sm-5 py-2 m-2" type="text" id="g_val">
+            <button class="d-block mx-auto m-3 px-5 btn btn-warning rounded-pill" onclick="guesses_fun()">
+                Submit guess</button>
+            <p class="text-white">Previous Guesses: <span id="guesses"></span></p>
+            <p class="text-white">Guesses Remaining: <span id="remaining">10</span></p>
+        </div>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

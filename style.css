@@ -1,0 +1,11 @@
+h1.bg-danger {
+    background: #7a2f55 !important;
+}
+
+div.bg-info {
+    background: #11a9b3 !important;
+}
+
+button {
+    background: #fefe00 !important;
+}
